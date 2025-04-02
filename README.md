@@ -40,21 +40,21 @@ Points of note:
 
 ```tsx
 interface Request {
-	compareSymbol: string; // Ticker
-	compareType: CompareType;
-	stockSymbols: string[]; // Ticker
-	cryptoSymbols: string[]; //Ticker
-	startDateString: string; // XXXX-XX-XX
-	endDateString: string; // XXXX-XX-XX
-	rollingWindow: number; // default value: 90
-	debug: boolean;
+  compareSymbol: string; // Ticker
+  compareType: CompareType;
+  stockSymbols: string[]; // Ticker
+  cryptoSymbols: string[]; //Ticker
+  startDateString: string; // XXXX-XX-XX
+  endDateString: string; // XXXX-XX-XX
+  rollingWindow: number; // default value: 90
+  debug: boolean;
 }
 
 enum CompareType {
   BITWISE_FUND = "bit",
   CRYPTO = "crypto",
   STOCK = "stock",
-
+}
 ```
 
 ### Response Structure
